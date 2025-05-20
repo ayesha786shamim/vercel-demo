@@ -1,5 +1,5 @@
-echo export default function handler(req, res) { > api\hello.js
-echo   setTimeout(() => { >> api\hello.js
-echo     res.status(200).send("Hello from GitHub to Vercel!"); >> api\hello.js
-echo   }, 1000); >> api\hello.js
-echo } >> api\hello.js
+export default function handler(req, res) {
+  setTimeout(() => {
+    res.status(200).send("Hello from Vercel! Auto-scaling triggered.");
+  }, 1000); // Simulate 1s processing time
+}
